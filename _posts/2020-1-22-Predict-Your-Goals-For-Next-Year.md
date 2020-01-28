@@ -25,3 +25,6 @@ Here were the stats from some well known players from last season (2018-2019)
 How many shots and goals did you have?  
 
 From a technical perspective, we need to ask how accurate our predictive model is.  First, if we just guessed, what type of error rate might we have in simply predicting your goals by simply calculating the mean of goals.  The "guessing" mean score of the dataset puts us right at 7.3.  Does our model improve that number?  After creating a train, validate, and test split on the data, the model gave a 6.63 for the validation set and a 6.52 mean absolute error rate for the test data.  What do we gather from this?  That our prediction model is better than simply guessing based on the mean of the data.  The mean absolute error tells us how much error we can expect from our model.  The amount of error decreased as we switched from "guessing" to linear regression.  Is the model perfect?  Nope.  As the old statistic model goes, "all models are wrong, but some are useful."  This model is useful in predicting the amount of goals for a given player in the coming hockey seasons.
+
+Here is the link to my google colab notebook for those who are interested:
+https://colab.research.google.com/drive/1H8iMeZdrjF_beTEFS2XrSCdZnIJcEMwN
