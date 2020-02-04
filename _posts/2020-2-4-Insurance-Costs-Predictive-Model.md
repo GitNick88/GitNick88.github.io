@@ -34,6 +34,6 @@ To build a model, I separated out from the dataset a training set, validation se
 
 I ran the testing data to get a final R Squared score and got a .89.  What does .89 mean?  Well, a score of 1 would mean that the coefficient created from the model would explain 100% of the variance of the data.  That's really unrealistic.  I wouldn't trust a perfect predictive model because nothing in life is perfect.  So .89 tells me that the model captures 89% of the variance of the data in relation to the model's coefficient.  That's a great sign that we can be confident that when given new data, the model will capture a good prediction with a small margin of error.
 
-What does our model do for price?  Our model, with new data, predicts that incoming customers are probably going to cost somewhere around $8794.32.  This was the calculation of mean absolute error on our testing data.  That's good news!
+What does our model do for price?  Our model, with new data, predicts that incoming customers are probably going to cost somewhere around $8794.32.  This was the calculation of mean absolute error on our testing data will tell us a realistic expectation for costs.  That's good news!
 
 
