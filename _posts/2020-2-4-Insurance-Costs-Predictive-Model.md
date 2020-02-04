@@ -25,7 +25,7 @@ As I've stated before, baselines are helpful as a reference point but I think we
 
 To build a model, I separated out from the dataset a training set, validation set, and a testing set.  That way we can run the test data as data that the model has never interacted with.  This will give us our accuracy score.  The tested two difference types of models and in the end I fit a XGBoost model because it got a higher accuracy rating.
 
-INSERT PIC OF XGBOOST
+![Top Dataframe](/img/XGBoost.PNG)
 
 I ran the testing data to get a final R Squared score and got a .89.  What does .89 mean?  Well, a score of 1 would mean that the coefficient created from the model would explain 100% of the variance of the data.  That's really unrealistic.  I wouldn't trust a perfect predictive model because nothing in life is perfect.  So .89 tells me that the model captures 89% of the variance of the datain relation to the model's coefficient.  That's a great sign that we can be confident that when given new data, the model will capture a good prediction with a small margin of error.
 
