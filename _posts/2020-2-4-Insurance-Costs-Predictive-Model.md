@@ -17,6 +17,11 @@ If the insuarnce company were to ask how much should they expect each customer t
 Just taking a quick glance at the dataset I realized that as I ran my eyes down the 'charges' column, prices seemed somewhat static.  They would range between $1,000 and $4,000.  Then suddenly, there woul be a large spike in charges to say, $39,000.  And again I kept seeing this pattern take place where these spikes could pop up out of nowwhere.  Why the sudden spike in cost?  I created a new dataframe that separated out smokers vs non smokers and I compared the total mean costs (for our baseline) of $13,270.42 and calculated the mean for only non smokers and the average dropped down to $8,434.27!  Just by removing smokers from the category, we can see a decrease in insurance costs by roughly 36%!
 
 I continued on in my desire to improve the costs for the insurance company and I ran the statistics for how much on average costs drop if obesity is taken into consideration.  It turns out that if I remove customers who have a bmi greater than 30 (a bmi greater than 30 is considered obese) then the baseline cost to the insurance company doesn't imporve.  Is there a correlation between obesity and healthcare costs?  Maybe, but this dataset didn't drop any hints about the relationship.  If there is indeed a correlation then we either need more data or we need a different way of coming to that conclusion.
+
+One visual that will help display the causal relationship on all of the features and how the impact charges to the insurance company is by a feature importance chart. Take a look at this!  It will become very clear what has the greatest impact on cost:
+
+![Feature Importance](/img/feature importances.PNG)
+
 3) Do men or women cost more money?
 My original though was that men, on average, would cost less than women.  I was wrong.  Again, looking at the baseline, men cost on average $13,956 and women $12,569.
 
