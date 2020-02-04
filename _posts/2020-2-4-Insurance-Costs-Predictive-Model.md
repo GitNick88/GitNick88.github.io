@@ -20,7 +20,7 @@ I continued on in my desire to improve the costs for the insurance company and I
 
 One visual that will help display the causal relationship on all of the features and how the impact charges to the insurance company is by a feature importance chart. Take a look at this!  It will become very clear what has the greatest impact on cost:
 
-![Feature Importance](/img/feature importances.PNG)
+![Feature Importances](/img/feature importances.PNG)
 
 3) Do men or women cost more money?
 My original though was that men, on average, would cost less than women.  I was wrong.  Again, looking at the baseline, men cost on average $13,956 and women $12,569.
