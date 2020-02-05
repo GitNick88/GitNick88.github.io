@@ -32,8 +32,26 @@ To build a model, I separated out from the dataset a training set, validation se
 
 ![Top Dataframe](/img/XGBoost.PNG)
 
-I ran the testing data to get a final R Squared score and got a .89.  What does .89 mean?  Well, a score of 1 would mean that the coefficient created from the model would explain 100% of the variance of the data.  That's really unrealistic.  I wouldn't trust a perfect predictive model because nothing in life is perfect.  So .89 tells me that the model captures 89% of the variance of the data in relation to the model's coefficient.  That's a great sign that we can be confident that when given new data, the model will capture a good prediction with a small margin of error.
+I ran the testing data to get a final R Squared score and got a .89.  What does .89 mean?  Well, a score of 1 would mean that the coefficient created from the model would explain 100% of the variance of the data.  That's not realistic.  I wouldn't trust a perfect predictive model because nothing in life is perfect.  So .89 tells me that the model captures 89% of the variance of the data in relation to the model's coefficient.  That's a great sign that we can be confident that when given new data, the model will capture a good prediction with a small margin of error.
 
-What does our model do for price?  Our model, with new data, predicts that incoming customers are probably going to cost somewhere around $8794.32.  This was the calculation of mean absolute error on our testing data will tell us a realistic expectation for costs.  That's good news!
+What does our model do for price?  Our model, with new data, predicts that incoming customers are probably going to cost somewhere around $8794.32.  This was the calculation of mean absolute error on our testing data will tell us a realistic expectation for costs.  That's good news because we have a more accurate model than simply predicting every incoming customer cost according to the baseline of $13,270.
 
+## Let's look at a few visuals from the model:
 
+The first visual here shows the relationship between our target (charges) and a singular feature; in this case it's 'age'.  This visual helps us see as age increases, so does the model's prediction of cost:
+
+![PDP Age](/img/PDP for age.PNG)
+
+Here's a second visual representation of the data.  This time, it incorporates two features, 'age' and 'bmi'.
+
+![Age and BMI](/img/age and bmi.PNG)
+
+If pick an age, and then a bmi, and follow the chart to where the two intersect, you'll see what the model predicts the costs to be based on those two variables.  Now, it's important to consider that if someone is listed as a smoker or a nonsmoker, the costs will be pulled in either direction. The point of this chart above is to show how these two features interact with eachother in the model.
+
+## Let's look at an actual prediction from my Jupyter Notebook:
+
+Once the model had been trained and fit it was time for the fun stuff, the predictions!  Here you can see the python code and then directly under was the output.  Here is an example:
+
+![Age and BMI](/img/prediction.PNG)
+
+My notebook asks to fill out the questions so it can make predictions.  In this case, with these parameters, the cost for this individual would be $3,446.  With this model in hand, this would be very useful for the insurance company because now they can use this model to predict the cost of future customers.  Always remember, models are not perfect. Remember the R Squared score from the XGBoost pipeline?  It had a score of .89 which means that the model fits the data very closely and so we can be confident that if the  model predicts that the cost for this individual is $3,446 then there may be some variance in actual costs, but it will be very close.  That's the power of predictive models!
