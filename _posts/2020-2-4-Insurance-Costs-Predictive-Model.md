@@ -4,13 +4,13 @@ Have you ever wondered how insurance companies determine how much people pay on 
 
 I've heard so many explinations... I've heard people say that the reason that health care costs so much is because of doctor salaries.  I once heard an ER doctor explain to me the costs of his insurance policy to defend against mal practice lawsuits - and that, according to him, was the reason that premiums were so high for customers.  I've heard people explain their desire for socialized medicine and how that would help bring down costs.  I've heard a lot of ideas.  Most of the time, the explination comes from the perspective of the customer.  What I want to do in this blog post is explain insurance costs from the perspective of the insurance company.
 
-I found a dataset from Kaggle.com which gave some data pieces that could help provide some interesting insigts into the costs of data.  Here's what the top of the dataframe looks like:
+I found a dataset from Kaggle.com which gave some data pieces that could help provide some interesting insigts into the costs of medical expenses.  Here's what the top of the dataframe looks like:
 
 ![Top Dataframe](/img/dfhead.PNG)
 
 As you can see, the dataset has records of a customer's age, sex, bmi, how many children they have, whether or not they smoke, and finally their region in the US. The very lost column is what the insurance company paid out that year for each individual.
 
-What I want to do is talk about a few things related to the data. After that, I want to show you a predictive tool, a linear regression model, to help the insurance company determine how much their customers will cost them during a 12 month period based on data provided from future customers.  Before I walk through the model itself, I was the point out a few things about what was significant within the data.
+What I want to do is talk about a few things related to the data. After that, I want to show you a predictive tool, a linear regression model, to help the insurance company determine how much their future customers will cost them during a 12 month period based on data provided from future customers.  Before I walk through the model itself, I want to point out a few things about what was significant within the data.
 
 ## What the data is communicating:
 1) The baseline:
@@ -21,7 +21,7 @@ Just taking a quick glance at the dataset I realized that as I ran my eyes down 
 
 I continued on in my desire to improve the predictive costs for the insurance company and I ran the statistics for how much on average costs drop if obesity is taken into consideration.  It turns out that if I remove customers who have a bmi greater than 30 (a bmi greater than 30 is considered obese) then the baseline cost to the insurance company doesn't imporve.  Is there a correlation between obesity and healthcare costs?  Maybe, but this dataset didn't drop any hints about the relationship.  If there is indeed a correlation then we either need more data or we need a different way of coming to that conclusion.
 
-One visual that will help display the causal relationship on all of the features and how the impact charges to the insurance company is by a feature importance chart. Take a look at this!  It will become very clear what has the greatest impact on cost:
+One visual that helps display the causal relationship on all of the features and how they impact charges to the insurance company is by a feature importance chart. Take a look at this!  It will become very clear what has the greatest impact on cost:
 
 ![Feature Importances](/img/top feature importance.PNG)
 
@@ -30,12 +30,12 @@ One more visual that will demonstrate the importance of smoking and cost is some
 ![correlation matrix](/img/top feature importance.PNG)
 
 
-3) The last questions that I asked data was: Do men or women cost more money? My original though was that men, on average, would cost less than women.  I was wrong.  Again, looking at the baseline, men cost on average $13,956 and women $12,569.
+3) The last question that I was curious to ask was: Do men or women cost more money? My original though was that men, on average, would cost less than women.  I was wrong.  Men cost on average $13,956 and women $12,569.
 
 ## How accurate is my predictive model?
 As I've stated before, baselines are helpful as a reference point but I think we can improve our understanding of healthcare costs if we do better with a predictive model.  If we want to anticipate future costs we need to use a linear regression model that fits better to the data, rather than just an average of the totals.
 
-To build a model, I separated out from the dataset a training set, validation set, and a testing set.  That way we can run the test data as data that the model has never interacted with.  This will give us our accuracy score.  The tested two difference types of models and in the end I fit a XGBoost model because it got a higher accuracy rating.
+To build a model, I separated out from the dataset a training set, validation set, and a testing set.  That way we can run the test data as data that the model has never interacted with.  This will give us our R Squared score.  Then I tested two difference types of models and in the end I fit a XGBoost model because it got a higher rating.
 
 ![Top Dataframe](/img/XGBoost.PNG)
 
@@ -53,7 +53,7 @@ Here's a second visual representation of the data.  This time, it incorporates t
 
 ![Age and BMI](/img/age and bmi.PNG)
 
-If you pick an age, and then a bmi, and follow the chart to where the two intersect, you'll see what the model predicts the costs to be based on those two variables.  Now, it's important to consider that if someone is listed as a smoker or a nonsmoker, the costs will be pulled in either direction based on the input from the customer.  Remember the feature imporances chart?  It's clear that smoking has the greatest influence on costs to the insurance company.  So on that chart above, a 25 year old with a bmi of 25 would be estimated, from the mode, to cost the company around $7907.  If the customer is a nonsmoker, that feature would drastically pull that number down.  If they are a smoker, that information would cause the costs to go up. The point of this chart above is to show how these two features interact with eachother in the model.
+If you pick an age, and then a bmi, and follow the chart to where the two intersect, you'll see what the model predicts the costs to be based on those two variables.  Now, it's important to consider that if someone is listed as a smoker or a nonsmoker, the costs will be pulled in either direction based on the input from the customer.  Remember the feature imporances chart?  It's clear that smoking has the greatest influence on costs to the insurance company.  So on that chart above, a 25 year old with a bmi of 25 would be estimated, from the model, to cost the company around $7907.  If the customer is a nonsmoker, that feature would drastically pull that number down.  If they are a smoker, that information would cause the costs to go up. The point of this chart above is to show how these two features interact with eachother in the model.
 
 ## Let's look at an actual prediction from my Jupyter Notebook:
 
