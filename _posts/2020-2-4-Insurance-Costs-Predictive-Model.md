@@ -1,3 +1,5 @@
+![Healthcare Costs](/img/healthcare costs.PNG)
+
 Have you ever wondered how insurance companies determine how much people pay on their premiums for health insurance?  Perhaps a better question is: Why on earth is health insurance so high?
 
 I've heard so many explinations... I've heard people say that the reason that health care costs so much is because of doctor salaries.  I once heard an ER doctor explain to me the costs of his insurance policy to defend against mal practice lawsuits - and that, according to him, was the reason that premiums were so high for customers.  I've heard people explain their desire for socialized medicine and how that would help bring down costs.  I've heard a lot of ideas.  Most of the time, the explination comes from the perspective of the customer.  What I want to do in this blog post is explain insurance costs from the perspective of the insurance company.
@@ -22,6 +24,11 @@ I continued on in my desire to improve the predictive costs for the insurance co
 One visual that will help display the causal relationship on all of the features and how the impact charges to the insurance company is by a feature importance chart. Take a look at this!  It will become very clear what has the greatest impact on cost:
 
 ![Feature Importances](/img/top feature importance.PNG)
+
+One more visual that will demonstrate the importance of smoking and cost is something called a correlation matrix.  In the image below, you'll see that squares that intersect with yellow are 100% correlated and the green squares are considered very correlated.  See below:
+
+![correlation matrix](/img/top feature importance.PNG)
+
 
 3) The last questions that I asked data was: Do men or women cost more money? My original though was that men, on average, would cost less than women.  I was wrong.  Again, looking at the baseline, men cost on average $13,956 and women $12,569.
 
