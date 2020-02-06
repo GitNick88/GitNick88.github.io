@@ -25,11 +25,6 @@ One visual that helps display the causal relationship on all of the features and
 
 ![Feature Importances](/img/top feature importance.PNG)
 
-One more visual that will demonstrate the importance of smoking and cost is something called a correlation matrix.  In the image below, you'll see that squares that intersect with yellow are 100% correlated and the green squares are considered very correlated.  See below:
-
-![correlation matrix](/img/top feature importance.PNG)
-
-
 3) The last question that I was curious to ask was: Do men or women cost more money? My original though was that men, on average, would cost less than women.  I was wrong.  Men cost on average $13,956 and women $12,569.
 
 ## How accurate is my predictive model?
