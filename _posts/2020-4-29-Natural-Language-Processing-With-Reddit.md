@@ -14,7 +14,26 @@ I tried several different models to see which one would perform the best.  This 
 
 ![Data Frame](/img/reddit_df.PNG)
 
+Once we had a good looking data set, we wanted to apply a preprocessing function to the text to clean it, drop stopwords, drop punctuation and return every character as lowercase.
 
+![Preprocessing FN](/img/reddit_preprocessing.PNG)
 
+The function get's incorporated during the TfidfVectorizer pipeline creation once we have a train/test split of the data:
+
+![Reddit Model](/img/reddit_model.PNG)
+
+Now onto the fun stuff, the predictions!  My teammate built a function for us to use that would plug into our flask app and return the top 5 predicted values:
+
+![Reddit Return Function](/img/reddit_return_fn.PNG)
+
+From here I created 4 fake posts and input them through the model to see what the model would predict.  Here's what it came up with:
+
+reddit_test_four.PNG
+![Test One](/img/reddit_test_one.PNG)
+![Test Two](/img/reddit_test_two.PNG)
+![Test Three](/img/reddit_test_three.PNG)
+![Test Four](/img/reddit_test_four.PNG)
+
+Here you can see these results.  Not bad!  The model lists each prediction in order from the five most likely categories.  We deployed this project through flask and worked with web students to deploy to their website so the user could in fact input their post, as I did in the 4 examples above.
 
 Link to Jupyter Notebook: https://github.com/GitNick88/GitNick88.github.io/blob/master/Unit_4_Build_NLP_Model1.ipynb
