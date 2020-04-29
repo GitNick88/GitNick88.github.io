@@ -28,7 +28,6 @@ Now onto the fun stuff, the predictions!  My teammate built a function for us to
 
 From here I created 4 fake posts and input them through the model to see what the model would predict.  Here's what it came up with:
 
-reddit_test_four.PNG
 ![Test One](/img/reddit_test_one.PNG)
 ![Test Two](/img/reddit_test_two.PNG)
 ![Test Three](/img/reddit_test_three.PNG)
