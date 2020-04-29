@@ -30,4 +30,3 @@ We used a "pipeline.predict_proba(X_val)" function on the validation data which 
 Notice at the bottom, that the precision we would have if we sent technicians on 2000 trips...  Around 98% of those wells would actually be broken and non functional.  Is the model perfect?  Of course not.  Consider, though, how well we would have done had we just guessed which wells needed a technician.  We would have been closer to 50% accurate.  With this model, we can be certain we would have an accuracy rate much higher than that!
 
 This was hands down the coolest project we did at Lambda.  Not only was it challenging to me to have to figure out a good model but it was all about helping people out in a sensible way!
-
