@@ -36,6 +36,4 @@ How did this model perform with an actual prediction?  I took index location 90 
 
 ![Model Prediction](/img/airbnb_prediction.PNG)
 
-Notebook: https://github.com/GitNick88/GitNick88.github.io/blob/master/AirBNB_Tensorflow_keras.ipynb
-
-[I'm an inline-style link](https://www.google.com)
+Notebook: [Here](https://github.com/GitNick88/GitNick88.github.io/blob/master/AirBNB_Tensorflow_keras.ipynb)
