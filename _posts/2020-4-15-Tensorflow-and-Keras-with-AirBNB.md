@@ -24,7 +24,7 @@ From there, I built a few box plots to visualize the distributions:
 
 ![Model Prediction](/img/airbnb_box2.PNG)
 
-Notice how the bodies of the boxes start in the bottom left and ascend as they move to the right?  That's because the data tells us that as there's a general increate in accommodations and bedrooms, there is a general increase in price.
+Notice how the bodies of the boxes start in the bottom left and ascend as they move to the right?  That's because the data tells us that as there's a general increase in accommodations and bedrooms, there is a general increase in price.
 
 After looking for the story in the data, it's time to build the model!  First, start with a train/test split of the data and then apply a scaler method to be performed on both 'X' sets of data.
 
