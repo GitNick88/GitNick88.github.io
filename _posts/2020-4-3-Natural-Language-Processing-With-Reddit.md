@@ -35,4 +35,5 @@ From here I created 4 fake posts and input them through the model to see what th
 
 Here you can see these results.  Not bad!  The model lists each prediction in order from the five most likely categories.  We deployed this project through flask and worked with web students to deploy to their website so the user could in fact input their post, as I did in the 4 examples above.
 
-Link to Jupyter Notebook: https://github.com/GitNick88/GitNick88.github.io/blob/master/Unit_4_Build_NLP_Model1.ipynb
+Notebook: [Here](https://github.com/GitNick88/GitNick88.github.io/blob/master/Unit_4_Build_NLP_Model1.ipynb)
+Website: [Here](https://whereinreddit.netlify.app/)
