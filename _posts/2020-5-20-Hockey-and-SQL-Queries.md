@@ -2,11 +2,11 @@
 
 Anyone who knows me knows that I've always loved hockey.  Some of my most vivid memories were trading hockey cards of the best players in the NHL with kids I grew up with on my street.
 
-As a kid, I had great record keeping skills for all of the most valuable cards that I had.  By record keeping, I mean good ol' handy pen and paper.  Several months ago, I learned about databases and SQL queries.  Perfect!
+As a kid, I had great record keeping skills for all of the most valuable cards that I had.  By record keeping, I mean good ol' pen and paper.  Several months ago, I learned about databases and SQL queries.  Perfect!
 
-I learned about several different applications for SQL queries.  The project that I started with in learning how to query a database in python was with bookstore data.  Cool!
+I built a few different projects that would demonstrate the infinite amount of use cases for databases and SQL queries.  The project that I started with in learning how to query a database in python was with bookstore data.  Cool!
 
-I wanted to create an app that could be utilized on my desktop that had a user interface.  So here's a copy of of user interface that I created using a python library called tkinter.
+I wanted to create an app that could be utilized on my desktop that had a user interface.  So here's a copy of the user interface that I created using a python library called tkinter.
 
 ![User Interface](/img/sql_gui.PNG)
 
