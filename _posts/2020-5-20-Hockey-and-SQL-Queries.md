@@ -17,3 +17,5 @@ I created a simple backend of the application in VSCode - with all of the functi
 ![Backend](/img/backend.PNG)
 
 From there I created a very simple frontend.py file to be the face of the program.  Any time I get the sense of wanting to add players to the database as a list of my all time favorite players, I can through the simple GUI.
+
+More functionality to come!
