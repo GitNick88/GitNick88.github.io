@@ -1,4 +1,4 @@
-![Common Shots](/img/pavel-datzyuk.jpg)
+![Gordie Howe](/img/Howe.jpg)
 
 Anyone who knows me knows that I've always loved hockey.  Some of my most vivid memories were trading hockey cards of the best players in the NHL with kids I grew up with on my street.
 
