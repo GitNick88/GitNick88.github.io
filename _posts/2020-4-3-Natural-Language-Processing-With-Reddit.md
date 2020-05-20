@@ -35,5 +35,11 @@ From here I created 4 fake posts and input them through the model to see what th
 
 Here you can see these results.  Not bad!  The model lists each prediction in order from the five most likely categories.  We deployed this project through flask and worked with web students to deploy to their website so the user could in fact input their post, as I did in the 4 examples above.
 
+The notebook wasn't the only part of the project, though.  We were required to pickle the model and deploy a flask app for post requests for the web team.  The web team would send a user's input of a title and text and our flask app/pickled model would return the model's prediction back to the user of where the post should be categorized.  Here's what the python application looked like:
+
+![Web App](/img/reddit_api.PNG)
+
+You can see the notebook and the actual website from the project below:
+
 Notebook: [Here](https://github.com/GitNick88/GitNick88.github.io/blob/master/Unit_4_Build_NLP_Model1.ipynb)
 Website: [Here](https://whereinreddit.netlify.app/)
